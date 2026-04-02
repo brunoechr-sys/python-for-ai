@@ -1,3 +1,5 @@
+
+#comit sample
 import requests
 
 # We need coordinates to get weather data
@@ -12,3 +14,4 @@ response = requests.get(url)
 data = response.json()
 
 print(data)
+print(f"The current temperature in Paris is: {data['current']['temperature_2m']}°C")
